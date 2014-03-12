@@ -1,0 +1,36 @@
+﻿<div id="contactContainer">
+    @if (ViewBag.Success != null)
+    {
+        <div class="success"><h1>Submitted.</h1>  <h3>I'll get in touch with you soon!</h3></div>
+    } else if (ViewBag.Robots != null) {
+        <div class="robot">Whoa! You are a robot or on drugs.  The sky is definitly not @ViewBag.Robots .</div>
+    } else {
+        <h4>Hey Dustin!</h4>   
+    }
+
+    
+    <form>  
+
+        <div>
+            <label for="name">My name is</label>
+            <br />
+            <input id="name" name="name" value="" required  aria-required="true">
+        </div>
+        <div>
+            <label for="email">and my email address is</label>
+            <br />
+            <input type="email" id="email" name="email" value="" required aria-required="true">
+        </div>
+        <div>
+            <label for="message">and I'd just like say...</label>
+            <br />
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div>
+            <label for="check">I can prove I'm not a robot, becuase the sky is...</label>
+            <br />
+            <input id="check" name="check" value="" required aria-required="true">
+        </div>
+        <button id="submit">Send</button>
+    </form>
+</div>

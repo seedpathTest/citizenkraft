@@ -1,0 +1,216 @@
+﻿/* RESET */
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+body {
+    font-size: .85em;
+    font-family:"Segoe UI", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+    margin: 2% 0 0 0;
+}
+
+
+
+
+header, footer, nav, section {
+    display: inline-block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 5px 0 5px 0;
+}
+h1 {font-size:6em;}
+h2 {font-size:4em;}
+h3 {font-size:3em;}
+h4 {font-size:2em;}
+h5 {font-size:1.2em;}
+h6 {font-size:.8em;}
+
+/* HEADER START */
+header{
+    width:100%;
+}
+
+    #dustin {
+        float:left;
+        height:61px;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+        width:100%;
+        text-align:center;
+        color:#06ae66;
+    }
+
+    #dustin:hover,#dustin.on {
+        cursor:pointer;
+        color:#FFF;
+        background:#06ae66;
+    }
+
+    #dustin.on {
+        width:100%;
+    }
+
+
+    header h1 {
+        font-size:3em;
+        font-variant: small-caps;
+        padding:0;
+        
+    }
+    header span {
+        font-size:1.2em;
+        padding-left:2px;
+        letter-spacing:1.6px;
+    }
+
+/* HEADER END */
+
+.clear {
+   clear:both;
+}
+
+/* NAV START */
+nav {
+    float:right;
+}
+
+    nav ul li {
+        display:inline-block;
+        padding: 0 15px 0px 15px;
+        font-variant:small-caps;
+        font-size:1.5em;
+        line-height:3em;
+        cursor:pointer;
+        width:100%;
+        text-align:center;
+        -moz-transition: all 1s;
+        -o-transition: all 1s;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+    }
+
+    nav ul li.dev{color:#ff483d;}
+    nav ul li.inst{color:#04aef8;}
+    nav ul li.gent{color:#0ac325;}
+
+    nav ul li.dev:hover, nav ul li.dev.on {
+        background:#ff483d;
+        color:#FFF;
+    }
+
+    nav ul li.inst:hover, nav ul li.inst.on {
+        background:#04aef8;
+        color:#FFF;
+    }
+
+
+    nav ul li.gent:hover, nav ul li.gent.on {
+        background:#0ac325;
+        color:white;
+    }
+    nav ul li.dev.on, nav ul li.inst.on, nav ul li.gent.on {
+        width:100%;
+    }
+
+/* NAV END */
+
+/* CONTAINERS START */
+#container {
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    margin-top:-2px;
+    background:#06ae66;
+    min-height:400px;
+    padding:5px;
+    color:#fff;
+    text-align:center;
+}
+
+
+#container.dev {background:#ff483d;}
+#container.inst {background:#04aef8;}
+#container.gent {background:#0ac325;}
+#container.contact {background:#ae8c06;}
+
+.dustinContainer{
+    padding:15px 0 0 0;
+}
+
+/* CONTAINER END */
+
+/* CONTACT CONTAINER START */
+#contactContainer {
+    text-align:center;
+    font-size:2em;
+}
+    
+    #contactContainer label
+    {
+        padding: 5px;
+    }
+    
+    #contactContainer label.error
+    {
+        font-size:.5em;
+        color:#FFF;
+        display:block;
+    }
+
+    #contactContainer textarea
+    {
+        width:26em;
+       height:6em;
+       margin:5px 0 0 0;
+    }
+    
+
+/* CONTACT CONTAINER END */
+
+/* FOOTER START */
+
+footer {
+    width:100%;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    font-variant:small-caps;
+   
+    color:#6f6b6b;
+    padding:5px;
+    font-size:.7em;
+    line-height:2em;
+}
+footer.dev{ color:#ff483d;}
+footer.inst{ color:#04aef8;}
+footer.gent{ color:#0ac325;}
+footer.contact{ color:#ae8c06;}
+
+#contact
+{
+    font-size:2em;
+    font-variant:small-caps;
+    float:right;
+    cursor:pointer;
+    color:#ae8c06;
+}
+
+    #contact:hover, #contact.on
+    {
+        background:#ae8c06;
+        color:white;
+    }
+
+
+
+/* FOOTER END */

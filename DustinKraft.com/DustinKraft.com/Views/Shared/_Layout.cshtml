@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dustin Kraft .:. @ViewBag.Title</title>
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="/Content/Site-small.css" />
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="/Content/Site.css" />
+    <meta name="description" content="Dustin Kraft's premier home on the series of tubes.  Get to know my mom's favorite developer and tech instructor." />
+    <meta name="keywords" content="dustin kraft, developer, denver, austin, new york, brooklyn, key west, milwaukee, lightburn, ascedia, seedpaths, instructor, gentleman, awesome" />
+    <meta name="robots" content="index,follow" />
+    <link rel="shortcut icon" href="/content/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/content/favicon.ico" type="image/x-icon">
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <header>
+        <div id="dustin" class="on tab">
+            <h1>Dustin Kraft</h1>
+            <span>39.735332, -104.980174</span>
+            
+        </div>
+        <nav>
+            <ul>
+                <li id="dev" class="tab">Developer</li>
+                <li id="inst" class="tab">Instructor</li>
+                <li id="gent" class="tab">Gentleman</li>
+            </ul>
+        </nav>
+    </header>
+    <br class="clear" />
+    <article id="container">
+        <div id="content-wrapper" class="content">
+            @RenderBody()
+        </div>
+    </article>
+    
+    <footer>
+        &copy;1983=>@DateTime.Now.Year Dustin Kraft
+        <span id="contact" class="tab">Contact Me
+        </span>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/Scripts/main.js")
+    @Scripts.Render("~/Scripts/jquery.validate.min.js")
+    @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-48715120-1']);
+  _gaq.push(['_setDomainName', 'dustinkraft.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
